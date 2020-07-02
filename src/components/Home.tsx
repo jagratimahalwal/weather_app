@@ -42,11 +42,12 @@ const Home: React.FC<{}> = () => {
       <React.Fragment>
     		<CssBaseline />
        <Container maxWidth="lg">
-          <AddCity onSearch={handleSearch}/>
-					<CssBaseline />
-					<Typography >
+            <Typography >
 						 { errorMessage }
 					</Typography>
+          <AddCity onSearch={handleSearch}/>
+					<CssBaseline />
+					
 					<CssBaseline />
           <Grid container spacing={1} >
             { (showList) && (searchLocations.length > 0) && (
