@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
-import Main from './components/Main';
+import "./App.css";
+import { WeatherProvider } from "./context/WeatherContext";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <WeatherProvider>
+      <HomePage></HomePage>
+    </WeatherProvider>
   );
 }
 
