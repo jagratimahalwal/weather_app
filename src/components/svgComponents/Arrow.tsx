@@ -8,7 +8,12 @@ const Arrow: React.FC<{}> = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="size-6"
+      className="size-10"
+      style={{
+        transform: "perspective(500px) rotateY(15deg)",
+        transformStyle: "preserve-3d",
+        transition: "transform 0.5s ease-in-out",
+      }}
     >
       <path
         strokeLinecap="round"
