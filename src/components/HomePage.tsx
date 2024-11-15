@@ -5,6 +5,7 @@ import { getWeatherByLongLat, getWeatherForecast } from "../config/api";
 import WeatherIcon from "./WeatherIcon";
 import WeatherDetails from "./WeatherDetails";
 import ForecastCard from "./ForecastCard";
+import TemperatureChart from "./TemperatureChart";
 import "./HomePage.css";
 import { ForecastItem } from "../models/types";
 import ForecastList from "./ForecastList";
@@ -108,6 +109,7 @@ const HomePage: React.FC<{}> = () => {
             ))}
           </div>
         </div>
+        <TemperatureChart forecastData={todayForecast} />
         <ForecastList />
       </div>
     </div>
